@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+  <title>Healthy life</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Healthy life </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active  ">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a href="articles.php" class="nav-link"> Articles </a>
+          </li>
+          <li class="nav-item">
+            <a href="signin.php" class="nav-link">live chat </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!-- SHOWCASE SLIDER -->
+   <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5 ">
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!--HOME ICON SECTION  -->
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-weight fa-3x mb-2"></i>
+          <h3>MBI and BMR </h3>
+          <p>Calculate Body Mass Index and Basal Metabolic Rate. </p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-user-md fa-3x mb-2"></i> <i class="far fa-comment-dots fa-3x mb-2"></i>
+
+
+          <h3>Live Chat</h3>
+          <p>Connect with Nutrition Doctor </p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-stethoscope fa-3x mb-2"></i>
+          <h3>Articles</h3>
+          <p> Increase the Awareness of Health By Reading the Articles  </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME HEADING SECTION -->
+  <header id="page-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          
+       
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section id="bmi" style="background: #2b2d41;" >
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12">
+          <div class="bmi-calculator">
+            <div class="result">
+              <div class="result-text"> 
+                <h1><span id="bmiValue">24.8 </span>kg/m2</h1><h2 id="bmid">Normal</h2>
+              </div>
+            </div>
+            <div class="calculator">
+              <h2 class="text-center calculator-title">What's Your BMI?</h2>
+              <hr class="calculator-hr"/>
+              <div class="height">
+                <input class="value_range" id="height" type="range" value="182" min="100" max="250" step="1"/>
+                <div class="label-height field-text">0</div>
+              </div>
+              <div class="weight">
+                <input class="value_range" id="weight" type="range" value="82" min="0" max="250" step="1"/>
+                <div class="label-weight field-text">0</div>
+              </div>
+              <div class="submit">
+                <input class="submit" type="submit" id="submit" value="Calculate"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </section>
+
+  <header id="page-headetwo">
+    <div class="container">
+ 
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+        
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section  id="bmr-calculator">
+     
+      <div class="row">
+        <div class="col-md-12">
+    <div  class="wrapper py-5" >
+      
+      <div class="formContent">
+        <h2 class=" p-4 mb-2 bg-white rounded text-dark">Calculate Your BMR</h2>
+      <div id="alertBox"></div>
+      <div class="divider"></div>
+     
+        <div class="btn-group btn-group-toggle formElement" data-toggle="buttons">
+          <label class="btn btn-outline-danger  active" id="male">
+          <input type="radio" name="options"  autocomplete="off" checked> Male
+          </label>
+          <label class="btn btn-outline-danger " id="female">
+          <input type="radio" name="options"  autocomplete="off"> Female
+          </label>
+        </div>
+        
+         
+    
+        <div class="form-group formGroupItem">
+            <label  class="col-2 col-form-label">Age</label>
+            <div class="col-10">
+            <input class="form-control" id="age" type="text" style="width: 95%;" value="20">
+            </div>
+        </div>
+        <div class="form-group formGroupItem ">
+            <label  class="col-2 col-form-label">Height</label>
+            <div class="col-6">
+            <input class="form-control" id="height" type="text" style="width: 95%;" value="150">
+        </div>
+            
+              <div class="col-4">
+            <div class="btn-group btn-group-toggle " data-toggle="buttons">
+          <label class="btn btn-outline-danger active" id="cm">
+          <input type="radio" name="options"  autocomplete="off" checked>  cm 
+          </label>
+          <label class="btn btn-outline-danger " id="ft">
+          <input type="radio" name="options"  autocomplete="off"> ft
+          </label>
+        </div>
+        </div>
+        
+        
+        </div>
+        <div class="form-group formGroupItem ">
+            <label  class="col-2 col-form-label">Weight</label>
+            <div class="col-6">
+            <input class="form-control" id="weight" type="text" style="width: 95%;" value="72">
+            </div>
+                    <div class="col-4">
+            <div class="btn-group btn-group-toggle " id="kg"data-toggle="buttons">
+          <label class="btn  btn-outline-danger  active">
+          <input type="radio" name="options"   autocomplete="off" checked> kg
+          </label>
+          <label class="btn btn-outline-danger " id="lbs">
+          <input type="radio" name="options"  autocomplete="off" > lbs
+          </label>
+        </div>
+        </div>
+        
+        </div>
+        
+        
+      
+        
+        <div class="form-group formGroupItem ">
+            <label  class="col-2 col-form-label">Activity</label>
+             <div class="col-10">
+              <select class="form-control"  style="width: 95%;" id="activity">
+              <option value="1.2">Lack of any activity</option>
+              <option value="1.3">Low physical activity (1 workouts a week) </option>
+              <option value="1.4">+ Low physical activity (2 workouts a week) </option>
+              <option value="1.5">Medium physical activity (3 workout per week) </option>
+              <option value="1.6">+ Medium physical activity (4 workout per week) </option>
+              <option value="1.7">High physical activity (3 workout per week + physical work) </option>
+              <option value="1.8">+ High physical activity (4 workout per week + physical work) </option>
+                <option value="1.9">Very high physical activity (athletes, people who train every day) </option>
+              <option value="2.2">+ Very high physical activity (athletes, people who train every day) </option>
+            </select>
+            </div>
+        </div>
+        
+          <div class="divider"></div>
+          
+          <div  id="Submit"  class="btn btn-danger formSubmit"> SUBMIT </div>
+          
+         
+        
+          <div class="form-group formGroupItem ">
+            <label  class="col-2 col-form-label" >BMR </label>
+            
+            <div class="col-10">
+            <input class="form-control" id="bmr" type="text" style="width: 95%;" readonly>
+            </div>
+            
+          </div>
+          
+        
+      
+        
+        
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+      </div>
+    </div>
+  </div>
+    
+  </div>
+
+    
+  </section>
+
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> Healthy life</p>
+        </div>
+      </div>
+    </div>
+  </footer>	
+
+
+  
+
+
+
+ 	 <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    var rangeSlider = function() {
+  var slider = $(".row"),
+    range = $(".value_range"),
+    value = $(".field-text");
+
+  slider.each(function() {
+    value.each(function() {
+      var value = $(this)
+        .prev()
+        .attr("value");
+      $(this).html(value);
+    });
+
+    range.on("input", function() {
+      $(this)
+        .next(value)
+        .html(this.value);
+    });
+  });
+};
+rangeSlider();
+
+$("#submit").click(function() {
+  var h = $("#height").val() / 100;
+  var w = $("#weight").val();
+  var bmi = h * h;
+  bmi = w / bmi;
+  bmi = bmi.toFixed(1);
+  $("#bmiValue").html(bmi + " ");
+  if (bmi < 18.5) {
+    //Underweight
+    $(".result-text").css(
+      "background",
+      "-webkit-linear-gradient(left top, #27939D, #07658F)"
+    );
+    $(".result-text").css(
+      "background",
+      "-o-linear-gradient(bottom right, #27939D, #07658F)"
+    );
+    $(".result-text").css(
+      "background",
+      "-moz-linear-gradient(bottom right, #27939D, #07658F)"
+    );
+    $(".result-text").css(
+      "background",
+      "linear-gradient(to bottom right, #27939D, #07658F)"
+    );
+    $("#bmid").html("Underweight");
+  } else if (18.5 <= bmi && bmi <= 24.9) {
+    //Normal weight
+    $(".result-text").css(
+      "background",
+      "-webkit-linear-gradient(left top, #4FD24D, #4CA456)"
+    );
+    $(".result-text").css(
+      "background",
+      "-o-linear-gradient(bottom right, #4FD24D, #4CA456)"
+    );
+    $(".result-text").css(
+      "background",
+      "-moz-linear-gradient(bottom right, #4FD24D, #4CA456)"
+    );
+    $(".result-text").css(
+      "background",
+      "linear-gradient(to bottom right, #4FD24D, #4CA456)"
+    );
+    $("#bmid").html("Normal");
+  } else if (25 <= bmi && bmi <= 29.9) {
+    //Overweight
+    $(".result-text").css(
+      "background",
+      "-webkit-linear-gradient(left top, #EF7532, #DC3A26)"
+    );
+    $(".result-text").css(
+      "background",
+      "-o-linear-gradient(bottom right, #EF7532, #DC3A26)"
+    );
+    $(".result-text").css(
+      "background",
+      "-moz-linear-gradient(bottom right, #EF7532, #DC3A26)"
+    );
+    $(".result-text").css(
+      "background",
+      "linear-gradient(to bottom right, #EF7532, #DC3A26)"
+    );
+    $("#bmid").html("Overweight");
+  } else {
+    //Obese
+    $(".result-text").css(
+      "background",
+      "-webkit-linear-gradient(left top, #F73946, #FF3875)"
+    );
+    $(".result-text").css(
+      "background",
+      "-o-linear-gradient(bottom right, #F73946, #FF3875)"
+    );
+    $(".result-text").css(
+      "background",
+      "-moz-linear-gradient(bottom right, #F73946, #FF3875)"
+    );
+    $(".result-text").css(
+      "background",
+      "linear-gradient(to bottom right, #F73946, #FF3875)"
+    );
+    $("#bmid").html("Obese");
+  }
+  console.log(bmi);
+});
+
+$('input[type="range"]').change(function() {
+  var val =
+    ($(this).val() - $(this).attr("min")) /
+    ($(this).attr("max") - $(this).attr("min"));
+
+  $(this).css(
+    "background-image",
+    "-webkit-gradient(linear, left top, right top, " +
+      "color-stop(" +
+      val +
+      ", #F73946), " +
+      "color-stop(" +
+      val +
+      ", #27283A)" +
+      ")"
+  );
+});
+
+$(".value_range").each(function() {
+  var val =
+    ($(this).val() - $(this).attr("min")) /
+    ($(this).attr("max") - $(this).attr("min"));
+
+  $(this).css(
+    "background-image",
+    "-webkit-gradient(linear, left top, right top, " +
+      "color-stop(" +
+      val +
+      ", #F73946), " +
+      "color-stop(" +
+      val +
+      ", #27283A)" +
+      ")"
+  );
+});
+
+
+function isNumericAndGreatherThanZero(num){
+  return !isNaN(num)  && num >0
+}
+
+$( "#Submit" ).click(function() {
+
+  var age = $("#age").val();
+  var height = $("#height").val();
+  var weight = $("#weight").val();
+
+  
+  if(!isNumericAndGreatherThanZero(age) ||  !isNumericAndGreatherThanZero(height) || !isNumericAndGreatherThanZero(weight)){
+		$('#alertBox').html("<div class='alert alert-danger alert-dismissible fade show' role='alert'> <strong>Incorrect values!</strong> Check the correctness of the entered values. <button type='button' class='close' data-dismiss='alert' aria-label='Close'> <span aria-hidden='true'>&times;</span> </button> </div>");
+		return;
+  }
+  
+  var activity = $("#activity").val();		
+  var male = $('#male').hasClass( "active" );
+  var ft = $('#ft').hasClass( "active" );
+  var lbs = $('#lbs').hasClass( "active" );
+  
+  
+
+  
+  if(ft){
+   height = height * 30.48;
+  }
+  
+ 
+  
+  if(lbs){
+  weight = weight * 0.45359237;
+  }
+  
+ var ageFactor,weightFactor,heightFactor,additionalFactor;
+ 
+ if(male){
+	additionalFactor = 66;
+	weightFactor = 13.7;
+	heightFactor = 5;
+	ageFactor=6.76;
+ }else{
+	additionalFactor = 655;
+	weightFactor = 9.6;
+	heightFactor = 1.8;
+	ageFactor=4.7;
+ }
+ 
+ 
+ var result =  Math.round((additionalFactor + (weightFactor*weight) + (heightFactor *height) - (ageFactor * age))) ;
+ 
+ $("#bmr").val(result);
+ 
+ var cpm = Math.round(result*activity);
+ $("#cpm").val(cpm);
+  
+  
+  var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title: {
+		text: "Macronutrients"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 240,
+		yValueFormatString: "##0.00\"g\"",
+		indexLabel: "{label} {y}",
+		dataPoints: [
+			{y: (cpm *0.15)/4, label: "Protein"},
+			{y: (cpm *0.30)/9, label: "Fat"},
+			{y: (cpm *0.55)/4, label: "Carbohydrates"},
+			
+		]
+	}]
+});
+chart.render();
+
+});
+	
+
+	
+
+  </script>
+</body>
+
+</html>
