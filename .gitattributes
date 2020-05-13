@@ -1,4 +1,4 @@
-.*.pl linguist-detectable=true
+*.pl linguist-detectable=true
 *.php linguist-detectable=true
 *.js linguist-detectable=true
 *.html linguist-detectable=false
